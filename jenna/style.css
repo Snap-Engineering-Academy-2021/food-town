@@ -1,0 +1,15 @@
+/* CSS Fonts
+font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Crimson Text', serif; */
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+}
