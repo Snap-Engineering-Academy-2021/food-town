@@ -1,0 +1,14 @@
+p, h1 {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 25%;
+}
+
+.chilaquiles {
+    display: flex;
+    justify-content: center;
+}
