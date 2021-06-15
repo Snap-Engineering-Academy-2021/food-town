@@ -3,7 +3,7 @@ var toggle = true;
 
 function onClick() {
     if (toggle) {
-        document.getElementById("greeting").innerHTML = "Hello there ";
+        document.getElementById("greeting").innerHTML = "Hello there, it's " + Date();
         toggle = false;
     } else {
         document.getElementById("greeting").innerHTML = "";
@@ -26,8 +26,9 @@ function generateWord(){
 function generateAllWords(){
     var words = ["ashwin", "pavan", "jenny", "danny", "kevin", "phoenix", "samara", "venus", "erica", "jonathan", "samantha", "ana", "jenna", "guido", "luis", "JT", "newsha", "ashley"];
     for (let i = 0; i < words.length; i++) {
-        var randomLeft = Math.floor(Math.random() * (100)); 
-        var randomTop = Math.floor(Math.random() * (80)) + 20; 
+        var randomLeft = Math.floor(Math.random() * (80)) + 5; 
+        var randomTop = Math.floor(Math.random() * (80)) + 10; 
+        var randomRotate = Math.floor(Math.random() *10); 
 
         var word = document.createElement('a');
         word.innerText = words[i];
@@ -37,6 +38,7 @@ function generateAllWords(){
         word.style.position = 'absolute';
         word.style.left = randomLeft + '%';
         word.style.top = randomTop + '%';
+        word.style.transform = 'rotate('+randomRotate + 'deg)';
         document.getElementById("soup").appendChild(word);
     }
 
