@@ -3,6 +3,10 @@ h1 {
     justify-content: center;
 }
 
+p {
+    font-size: 36px;
+}
+
 img {
     width: 20%;
 }
