@@ -1,0 +1,43 @@
+body{
+    background-color: wheat;
+    font-family: Papyrus; 
+}
+h1 {
+    color: slategrey;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    color:slategray;
+    text-align: left;
+    font-size: 40px;
+}
+h3 {
+    color:slategray;
+    text-align: left;
+    font-size: 35px;
+}
+li{
+    color: slategrey;
+    text-align: left;
+    font-size: 25px;
+}
+button{
+    background-color: wheat;
+    display: block;
+    margin-left: left;
+    margin-right: left;
+}
+li.stickyli{
+    list-style-type: none;
+    float:left;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    border-left: 1px dotted;
+    border-color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
