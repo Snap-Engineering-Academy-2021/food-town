@@ -30,3 +30,15 @@
 // window.onload = () => {
 //     generateWord();
 // }
+
+function initMap() {
+    const seaSide = {lat:33.60861088365024,lng: -117.929009951382};
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: seaSide,
+    });
+    const marker = new google.maps.Marker({
+        position: seaSide,
+        map: map,
+    })
+}

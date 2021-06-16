@@ -16,26 +16,57 @@
   <script src="js/scripts.js"></script>
 </body>
 <body>
-  <img src="https://media-cdn.tripadvisor.com/media/photo-p/1a/d5/db/7c/photo0jpg.jpg">
-    <h1>Seaside Bakery</h1>
-    <h2>Must Try Picks!</h2>
-    <img src="https://lh3.googleusercontent.com/proxy/D7_q05OkMzCwzgv74UMNiFjlc3bPHaVqEfIocvrpry8OqGNQ2Dk-HlzD-VHGd-iSbwwGFgrGFFwIF9lru1ueCcjLyvu8OYhP39Z3nNM7UP69uuuNrAByF3KrxlqjNWqNj3l6bw_51_QfhHaNXorVCdqFm9F1o2A">
-    <h3>Ham & Cheese with Jalapenos</h3>
-    <img src="http://3.bp.blogspot.com/-t0-hU-1UpyE/VOlYKnDNrQI/AAAAAAAAO5Q/NudLyVgMXBU/s1600/IMG_3625.JPG">
-    <h3>Matcha Thai Tea</h3>
-    <img src="https://www.visitnewportbeach.com/wp-content/uploads/2015/05/cronut2-300x259.jpg">
-    <h3>Cronut</h3>
-    <h2>Now that you're drooling...</h2>
-    <img src="https://image.freepik.com/free-vector/open-24-7-neon-style-sign-illustration_189374-91.jpg">
-    <h3>It's open 24/7!</h3>>
-    <h3>It's in Newport Beach</h3>
+  <div id="intro">
+    <img id="seaside-pic" src="https://media-cdn.tripadvisor.com/media/photo-p/1a/d5/db/7c/photo0jpg.jpg">
+    <h1>Seaside Donuts Bakery</h1>
+  </div>
+  
+    <div id="food">
+      <h2>Must Try Picks!</h2>
+      <div id="food-items">
+        <div id="ham-and-cheese">
+          <h3>Ham & Cheese Croissant with Jalapenos</h3>
+          <img src="https://lh3.googleusercontent.com/proxy/D7_q05OkMzCwzgv74UMNiFjlc3bPHaVqEfIocvrpry8OqGNQ2Dk-HlzD-VHGd-iSbwwGFgrGFFwIF9lru1ueCcjLyvu8OYhP39Z3nNM7UP69uuuNrAByF3KrxlqjNWqNj3l6bw_51_QfhHaNXorVCdqFm9F1o2A">
+          <p>The Ham & Cheese Croissant with Jalapenos is an AMAZING peace of work from heaven. The kind workers warm it up for you on the spot, so the cheese is melty and the bread is super duper soft! For an unforgettable experience in your mouth, this is the dish to get when check this place out!</p>
+        </div>
+        <div id="matcha-thai-tea">
+          <h3>Matcha Thai Tea</h3>
+          <img src="http://3.bp.blogspot.com/-t0-hU-1UpyE/VOlYKnDNrQI/AAAAAAAAO5Q/NudLyVgMXBU/s1600/IMG_3625.JPG">  
+          <p>The Matcha Thai Tea is like nothing else, combining two of the world's most amazing things, matcha and thai tea. Sweet and smooth, you don't want to forget ordering this on your next trip!</p>
+        </div>
+        <div id="cronut">
+          <h3>Cronut</h3>
+          <img src="https://www.visitnewportbeach.com/wp-content/uploads/2015/05/cronut2-300x259.jpg">
+          <p>The Cronut is a classic at Seaside Bakery. Imagine a perfectly glazed donut that's sweet and light. Now imagine a fliffy, buttery croissant. Together, they're an unforgettable combination you're sure to come back for!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="info">
+      <h2>Now that you're drooling...</h2>
+      <div id="info-items"> 
+        <div id="hours">
+          <img src="https://image.freepik.com/free-vector/open-24-7-neon-style-sign-illustration_189374-91.jpg">
+          <h3>It's open 24/7!</h3>>
+        </div>
+        <div id="location">
+          <h3>It's in Newport Beach</h3>
+          <div id="map"></div>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI9H9qd8jPW2EUeowf79oZ5iTja3VU0I8&callback=initMap&libraries=&v=weekly"
+            async>
+          </script>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- <button onclick=onClick()>CLICK ME</button>
     <h1 id="greeting"></h1>
     <div id='soup'>
       <h1 id="hi">Hi</h1>
       <h1 class="yum">Yum</h1>
     </div> -->
-    <p>dogs</p>
 </body>
 </html>
 
