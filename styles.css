@@ -3,7 +3,7 @@
   src: url("./assets/alphabetsoupregular.ttf");
 }
 html {
-  cursor: url("./assets/spoon2.svg"), wait;
+  cursor: url("./assets/spoon.png"), wait;
 }
 
 body {
@@ -37,7 +37,7 @@ h1:hover,
 a:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
-  cursor: url("./assets/spoon2.svg"), wait;
+  cursor: url("./assets/spoon.png"), wait;
 }
 
 @keyframes float {
