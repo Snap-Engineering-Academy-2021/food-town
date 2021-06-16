@@ -4,8 +4,61 @@
     box-sizing: border-box;
 }
 
-.heading {
-    color: red;
-    display: grid;
-    justify-content: center;
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 15px;
+}
+
+.text-heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(255, 243, 244, 0.3), rgba(180, 152, 165, 0.31)), url("../images/paella-background.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.text-heading {
+    color: black;
+    text-transform: uppercase;
+}
+
+.primary-heading-main {
+    display: block;
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: 35px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
