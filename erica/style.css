@@ -1,4 +1,5 @@
 header{
+    background-color: #FDCE2A;
     font-size: 36px;
     width: 600px;
     border: 15px solid yellow;
@@ -7,6 +8,11 @@ header{
     display: flex;
     justify-content: center;
     content: yellow;
+}
+body
+{
+    /* background-color: #FEE227; */
+    background-color: #FCF4A3;
 }
 
 div button
@@ -29,4 +35,11 @@ div button
     /* display: inline-block; */
     margin-left: 75%;
     /* margin-top: 0%; */
+}
+
+.center
+{
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
 }

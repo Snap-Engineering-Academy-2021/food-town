@@ -28,6 +28,7 @@ function onClickPasta()
         "a pasta that has fresh Italian parsley, and an option to top it with " +
         "chicken and/or shrimp, and Sauteed Cremini Mushrooms. This dish also " +
         "goes very well with the Butter Cake."
+        
         toggle = true;
     } else 
     {
