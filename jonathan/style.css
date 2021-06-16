@@ -7,6 +7,9 @@
 .yum {
     color:rgb(204, 162, 243);
 } */
+#intro {
+    color:blueviolet;
+}
 body {
     cursor: url("./assets/donuts-cursor.cur"), auto;
     text-align: center;
