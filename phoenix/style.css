@@ -12,8 +12,21 @@ p{
   font-size: 20px;
   font-weight: bold;
   font-family: 'Courier New', monospace;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 ul{
   font-size: 20px;
   font-family: 'Courier New', monospace;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#nachos{
+  display: flex;
+  justify-content: space-evenly;
+}
+#nachos2{
+  float: right;
+  left: 80px;
+  top: 50px;
 }
