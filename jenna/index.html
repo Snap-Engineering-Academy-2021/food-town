@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese Beef Curry</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&family=Caveat&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="title">
+    <div id="title" class="section">
         <h1>Japanese Beef Curry</h1>
-        <p>Recipe taken from <a href="https://www.justonecookbook.com/japanese-beef-curry/">this site</a>.</p>
+        <p>See the full recipe <a href="https://www.justonecookbook.com/japanese-beef-curry/">here</a>.</p>
         <p>A delicious, savory, and sweet combination of beef, potatoes, carrots, mushrooms, and curry roux guaranteed to make your mouth water.</p>
+        <div id="img-container">
+            <img id="curry-img">
+        </div>
+        <button onclick=generateCurryImage()>Click for inspiration!</button>
     </div>
-    <div class="ingredients">
+    <div id="ingredients" class="section">
         <h2>Ingredients</h2>
         <section class="food-items">
             <ul>
@@ -48,30 +53,30 @@
             </ul>
         </section>
     </div>
-    <div class="instructions">
+    <div id="instructions" class="section">
         <h2>Instructions</h2>
-        <section class="steps">
+        <section id="steps">
             <p>Gather the ingredients.</p>      
             <h3>Prepping</h3>
-                <ol>
-                    <li>Cut the onion into thin slices. Cut the carrots diagonally while rotating every quarter between cuts ("rangiri" technique).</li>
-                    <li>Cut the potato in half and then into quarters. Soak in water for 15 minutes to remove the starch.</li>
-                    <li>Clean the mushrooms and cut into thin slices.</li>
-                    <li>Cut beef into 1 1/2 inch cubes and lightly sprinkle salt and pepper. The lightly coat the meat with flour.</li>
-                </ol>
+            <ol>
+                <li>Cut the onion into thin slices. Cut the carrots diagonally while rotating every quarter between cuts ("rangiri" technique).</li>
+                <li>Cut the potato in half and then into quarters. Soak in water for 15 minutes to remove the starch.</li>
+                <li>Clean the mushrooms and cut into thin slices.</li>
+                <li>Cut beef into 1 1/2 inch cubes and lightly sprinkle salt and pepper. The lightly coat the meat with flour.</li>
+            </ol>
             <h3>Cooking the Curry</h3>
-                <ol>
-                    <li>In a cast-iron skillet, heat 1 Tbsp oil and 1 Tbsp butter on medium-high heat. Add the beef in the pan but do not crowd the skillet as you would end up "steaming" the beef. Make sure to cook in 2-4 batches. Sear the beef on both sides until brown and crusty, about 8-10 minutes, then flip (don't touch till then). The meat will release itself when the surface is seared nicely. Transfer the seared meat to a plate and work on the next batch.</li>
-                    <li>In a large heavy-bottomed pot or large pot, heat 1 Tbsp butter on medium heat and add the onion. Add 1 Tbsp olive oil and stir to coat the onion with the oil. Add ¼ tsp salt and sauté the onion until tender and translucent, about 20 minutes. If you have time, you can spend more time until the onions are caramelized, about 30-40 minutes.</li>
-                    <li>Add garlic, ginger, curry powder, and tomato paste and sauté for 2 minutes.</li>
-                    <li>Add the beef and the wine and stir, letting the alcohol evaporate, for 3 minutes.</li>
-                    <li>Add the vegetable and mushrooms and pour the beef broth (and water) just enough to cover the ingredients. Cover with the lid and bring it to a boil.</li>
-                    <li>Once boiling, skim off the scum and fat from the soup. I prepare a 2-cup measuring cup with water in it and clean my fine-mesh skimmer in the water. It’s easy to remove the scum/fat from the fine mesh this way.</li>
-                    <li>Add bay leaf, cover with the tight-fitting lid. Simmer (on the lowest heat) until the meat is tender, about 2 hours.</li>
-                    <li>Occasionally, skim the broth to clean the surface of the broth. Make sure the ingredients are under the broth, and if not, add the leftover beef broth (or water), just enough to cover the ingredients.</li>
-                    <li>Once the ingredients are all tender, turn off the heat and add the curry roux. With fork/chopsticks, let 2-3 pieces of curry roux dissolved completely inside the ladle and then release to the broth. Then add another few pieces. Adjust the amount of the curry roux to your taste (you may not need to use all the roux). That way, the undissolved roux won't end up in the broth. If the curry is too thick for your taste, add water to dilute. From this point, simmer on the lowest heat and stir often and be careful not to burn the curry!</li>
-                    <li>Add milk, Worcestershire sauce, and grated apple. Mix thoroughly and simmer till hot. If the curry is too soupy (probably you added too much broth/water), simmer, uncovered (no lid), stirring occasionally.</li>
-                </ol>
+            <ol>
+                <li>In a cast-iron skillet, heat 1 Tbsp oil and 1 Tbsp butter on medium-high heat. Add the beef in the pan but do not crowd the skillet as you would end up "steaming" the beef. Make sure to cook in 2-4 batches. Sear the beef on both sides until brown and crusty, about 8-10 minutes, then flip (don't touch till then). The meat will release itself when the surface is seared nicely. Transfer the seared meat to a plate and work on the next batch.</li>
+                <li>In a large heavy-bottomed pot or large pot, heat 1 Tbsp butter on medium heat and add the onion. Add 1 Tbsp olive oil and stir to coat the onion with the oil. Add ¼ tsp salt and sauté the onion until tender and translucent, about 20 minutes. If you have time, you can spend more time until the onions are caramelized, about 30-40 minutes.</li>
+                <li>Add garlic, ginger, curry powder, and tomato paste and sauté for 2 minutes.</li>
+                <li>Add the beef and the wine and stir, letting the alcohol evaporate, for 3 minutes.</li>
+                <li>Add the vegetable and mushrooms and pour the beef broth (and water) just enough to cover the ingredients. Cover with the lid and bring it to a boil.</li>
+                <li>Once boiling, skim off the scum and fat from the soup. I prepare a 2-cup measuring cup with water in it and clean my fine-mesh skimmer in the water. It’s easy to remove the scum/fat from the fine mesh this way.</li>
+                <li>Add bay leaf, cover with the tight-fitting lid. Simmer (on the lowest heat) until the meat is tender, about 2 hours.</li>
+                <li>Occasionally, skim the broth to clean the surface of the broth. Make sure the ingredients are under the broth, and if not, add the leftover beef broth (or water), just enough to cover the ingredients.</li>
+                <li>Once the ingredients are all tender, turn off the heat and add the curry roux. With fork/chopsticks, let 2-3 pieces of curry roux dissolved completely inside the ladle and then release to the broth. Then add another few pieces. Adjust the amount of the curry roux to your taste (you may not need to use all the roux). That way, the undissolved roux won't end up in the broth. If the curry is too thick for your taste, add water to dilute. From this point, simmer on the lowest heat and stir often and be careful not to burn the curry!</li>
+                <li>Add milk, Worcestershire sauce, and grated apple. Mix thoroughly and simmer till hot. If the curry is too soupy (probably you added too much broth/water), simmer, uncovered (no lid), stirring occasionally.</li>
+            </ol>
             <h3>To Serve</h3>
             <p>Serve the curry with Japanese steamed rice and top with fukujinzuke (pickles).</p>
             <h3>Storing</h3>
