@@ -1,0 +1,86 @@
+/* CSS Fonts
+font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Crimson Text', serif; */
+
+/* CSS Colors
+
+ Color Theme Swatches in Hex
+.Branding:-Goed-1-hex { color: #645E8C; }
+.Branding:-Goed-2-hex { color: #CED3F2; }
+.Branding:-Goed-3-hex { color: #DFE2F2; }
+.Branding:-Goed-4-hex { color: #012623; }
+.Branding:-Goed-5-hex { color: #275954; }
+
+Color Theme Swatches in RGBA
+.Branding:-Goed-1-rgba { color: rgba(100, 93, 140, 1); }
+.Branding:-Goed-2-rgba { color: rgba(205, 211, 242, 1); }
+.Branding:-Goed-3-rgba { color: rgba(222, 225, 242, 1); }
+.Branding:-Goed-4-rgba { color: rgba(0, 38, 34, 1); }
+.Branding:-Goed-5-rgba { color: rgba(39, 89, 84, 1); }
+
+Color Theme Swatches in HSLA
+.Branding:-Goed-1-hsla { color: hsla(247, 19, 45, 1); }
+.Branding:-Goed-2-hsla { color: hsla(230, 58, 87, 1); }
+.Branding:-Goed-3-hsla { color: hsla(230, 43, 91, 1); }
+.Branding:-Goed-4-hsla { color: hsla(174, 96, 7, 1); }
+.Branding:-Goed-5-hsla { color: hsla(174, 38, 25, 1); }
+
+*/
+
+/* Global Styling */
+
+* {
+  background-color: #ced3f2;
+  margin: 0;
+  top: 20;
+}
+
+body {
+  margin: 2% 3%;
+}
+
+.section {
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #0d0d0d;
+  width: 540px;
+  height: 170px;
+  border-radius: 530px / 170px;
+  display: flex;
+  align-items: center;
+  border: 4px solid #645e8c;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+p {
+  font-family: "Crimson Text", serif;
+}
+
+ul {
+  list-style-type: square;
+}
+
+/* Sections */
+
+#steps {
+width: 55%;
+}
+
+#steps li {
+  margin: 15px 0;
+}
