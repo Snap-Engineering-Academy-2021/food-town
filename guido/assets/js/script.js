@@ -30,6 +30,7 @@ const ingredientsOther = [
     { type: 'other', amountS: 2, amountM: 4, amountL: 6, name: "oz Chicken Stock"},
 ]
 
+// Function NOT Complete
 const displayIngrdients = function (type) {
     for (let i = 0; i < `ingredients${type}`.length; ++i) {
         `display${type}`.innerHTML += `<div class="ingredient-display">${`ingredients${type}[i]`.amountS} -- ${ingredientsVegies[i].name}</div>`
