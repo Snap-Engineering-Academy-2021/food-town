@@ -1,3 +1,14 @@
 body{
-    background-color: cornsilk ;
+    background-color: #99a682 ;
+    
+    background-image: url("cfa_photo.jpeg");
+    background-repeat: no-repeat;
+    margin-left:150px;
+    margin-right:150px;
+    background-position-x: 990px;
+    background-position-y: 170px;
+ 
+}
+h1{
+    color:#faf4dc;
 }
