@@ -6,4 +6,27 @@ header{
     margin: auto;
     display: flex;
     justify-content: center;
+    content: yellow;
+}
+
+div button
+{
+    background-color: yellow;
+    /* display: inline-block; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin-left: 15%; */
+}
+
+#pizzaButton
+{
+    margin-left: 15%; 
+}
+
+#pastaButton
+{
+    /* display: inline-block; */
+    margin-left: 75%;
+    /* margin-top: 0%; */
 }
