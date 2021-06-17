@@ -44,7 +44,7 @@ var text = {
 // var description = document.createElement('p').innerText(text[contentNum].title);
 
 // document.getElementById("c1").appendChild(description);
-function deleteChildElements() {
+function removeChild(parent) {
 
     while (parent.lastChild) {
         parent.removeChild(parent.lastChild);
@@ -56,6 +56,9 @@ function prev() {
 
     let title = text[contentNum].title;
     let lines = text[contentNum].paragraph;
+    let parent = document.getElementById('c1');
+    
+    removeChild(parent);
     
 
     if (contentNum === 1) {
@@ -95,6 +98,9 @@ function next() {
 
     let title = text[contentNum].title;
     let lines = text[contentNum].paragraph;
+    let parent = document.getElementById('c1');
+    
+    removeChild(parent);
 
     if (contentNum === 4) {
         contentNum = 1;
