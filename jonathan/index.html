@@ -21,55 +21,58 @@
 <body>
   <div id="intro">
     <img id="seaside-pic" src="https://media-cdn.tripadvisor.com/media/photo-p/1a/d5/db/7c/photo0jpg.jpg">
-    <h1>Seaside Donuts Bakery</h1>
+    <h1 class="default-formatting">Seaside Donuts Bakery</h1>
   </div>
   
     <div id="food">
       <h2>Must Try Picks!</h2>
-      <div id="food-items">
-        <div id="ham-and-cheese-with-jalapeno-1">
+      <div id="food-items" class="default-formatting">
+        <div class="an-item" id="ham-and-cheese-with-jalapeno-1">
           <h3>Ham & Cheese Croissant with Jalapeno</h3>
           <img src="http://4.bp.blogspot.com/-PCEr3i_kvlg/VOlYMzgk4dI/AAAAAAAAO5s/kN_mwOzBqiA/s1600/IMG_3624.JPG">
           <p>The Ham & Cheese Croissant with Jalapeno is an AMAZING peace of work from heaven. The kind workers warm it up for you on the spot, so the cheese is melty and the bread is super duper soft! For an unforgettable experience in your mouth, this is the dish to get when check this place out!</p>
         </div>
-        <div id="matcha-thai-tea">
+        <div class="an-item" id="matcha-thai-tea">
           <h3>Matcha Thai Tea</h3>
           <img src="http://3.bp.blogspot.com/-t0-hU-1UpyE/VOlYKnDNrQI/AAAAAAAAO5Q/NudLyVgMXBU/s1600/IMG_3625.JPG">  
           <p>The Matcha Thai Tea is like nothing else, combining two of the world's most amazing things, matcha and thai tea. Sweet and smooth, you don't want to forget ordering this on your next trip!</p>
         </div>
-        <div id="cronut">
+        <div class="an-item" id="cronut">
           <h3>Cronut</h3>
           <img src="https://www.visitnewportbeach.com/wp-content/uploads/2015/05/cronut2-300x259.jpg">
           <p>The Cronut is a classic at Seaside Bakery. Imagine a perfectly glazed donut that's sweet and light. Now imagine a fliffy, buttery croissant. Together, they're an unforgettable combination you're sure to come back for!</p>
         </div>
       </div>
       <h2>Since their croissants are the <b>absolute best</b>, checkout their other croissants!</h2>
-      <button onclick=openFullMenu()>Open Full Menu</button>
-      <div id="full-menu">
-        <p id="ham-and-cheese"></p>
-        <p id="ham-and-cheese-with-jalapeno-2"></p>
-        <p id="turkey-and-cheese"></p>
-        <p id="cheese"></p>
-        <p id="cheese-with-jalapeno"></p>
-        <p id="plain"></p>
-        <p id="chocolate"></p>
-        <p id="blueberry-cream-cheese"></p>
-        <p id="strawberry-cream-cheese"></p>
-        <p id="cream cheese"></p>
-        <p id="almond"></p>
+      <div class="default-formatting"> 
+        <button id="button" onclick=openFullMenu()>Open Croissant Menu</button>
+        <div id="full-menu">
+          <p id="ham-and-cheese"></p>
+          <p id="ham-and-cheese-with-jalapeno-2"></p>
+          <p id="turkey-and-cheese"></p>
+          <p id="cheese"></p>
+          <p id="cheese-with-jalapeno"></p>
+          <p id="plain"></p>
+          <p id="chocolate"></p>
+          <p id="blueberry-cream-cheese"></p>
+          <p id="strawberry-cream-cheese"></p>
+          <p id="cream-cheese"></p>
+          <p id="almond"></p>
+        </div>
       </div>
     </div>
     
     <div id="info">
       <h2>Now that you're drooling...</h2>
       <div id="info-items"> 
+        <p>Now, I'd like to let you know that it's open <b>24 hours a day, 7 days a week</b>! That means you can satisfy your 3AM cravings in style >:D To do so, drop by Seaside Donuts Bakery in Newport Beach for an mouthful of amazing experiences!</p>
         <div id="hours">
           <!-- <img src="https://image.freepik.com/free-vector/open-24-7-neon-style-sign-illustration_189374-91.jpg"> -->
-          <h3>It's open 24/7!</h3>>
+          <!-- <h3>It's open 24/7!</h3>> -->
         </div>
         <div id="location">
-          <h3>It's in Newport Beach</h3>
-          <div id="map"></div>
+          <!-- <h3>It's in Newport Beach</h3> -->
+          <!-- <div id="map"></div> -->
           <!-- <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI9H9qd8jPW2EUeowf79oZ5iTja3VU0I8&callback=initMap&libraries=&v=weekly"
             async>
@@ -77,6 +80,9 @@
         </div>
       </div>
     </div>
+    <a href="../index.html">
+    <button id="main-page" href="../index.html">Visit Main Page</button>
+    </a>
     
     
     <!-- <button onclick=onClick()>CLICK ME</button>

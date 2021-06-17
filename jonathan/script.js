@@ -48,7 +48,6 @@ var toggle = false;
 
 function openFullMenu() {
     if (!toggle) {
-        // document.getElementById("full-menu").innerHTML = "hi bud, today is ";
         document.getElementById("ham-and-cheese").innerHTML = "Ham & Cheese";
         document.getElementById("ham-and-cheese-with-jalapeno-2").innerHTML = "Ham & Cheese with Jalapeno";
         document.getElementById("turkey-and-cheese").innerHTML = "Turkey & Cheese";
@@ -60,11 +59,9 @@ function openFullMenu() {
         document.getElementById("strawberry-cream-cheese").innerHTML = "Strawberry Cream Cheese";
         document.getElementById("cream-cheese").innerHTML = "Cream Cheese";
         document.getElementById("almond").innerHTML = "Almond";
+        document.getElementById("button").innerHTML = "Close Croissant Menu";
         toggle = true;
     } else {
-        alert("baaa");
-        // document.getElementById("full-menu").innerHTML = "";
-        // document.getElementById("full-menu").style.fontSize = 0;
         document.getElementById("ham-and-cheese").innerHTML = "";
         document.getElementById("ham-and-cheese-with-jalapeno-2").innerHTML = "";
         document.getElementById("turkey-and-cheese").innerHTML = "";
@@ -76,6 +73,11 @@ function openFullMenu() {
         document.getElementById("strawberry-cream-cheese").innerHTML = "";
         document.getElementById("cream-cheese").innerHTML = "";
         document.getElementById("almond").innerHTML = "";
+        document.getElementById("button").innerHTML = "Open Croissant Menu";
         toggle = false;
     }
 }
+
+function mainPage(){
+    window.open("https://snap-engineering-academy-2021.github.io/food-town/");
+  }
