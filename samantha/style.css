@@ -1,9 +1,19 @@
+/* @font-face {
+  font-family: NoodleFont;
+  src: url("./assets/Noodleshaded-1GKL.woff");
+} */
+
 body {
-  background-color: powderblue;
+  background-color: #f5e3b4;
+  padding-top: 0px;
+  padding-left: 30px;
 }
-h1 {
-  color: blue;
+#header {
+  color: rgb(241, 14, 14);
+  margin: 0;
+  padding: 0;
+  background-color:rgb(255, 255, 255)
 }
-p {
-  color: red;
+#images{
+  text-align: center;
 }
