@@ -6,6 +6,8 @@ function onClickPizza()
 {
     var img = document.createElement('img');
     img.src = '../assets/BBQChickenPizza.jpeg';
+    linebreak = document.createElement("br");
+
     if (!togglePizza) 
     {
         document.getElementById("pizza").innerHTML = "This pizza is topped with BBQ sauce," +
@@ -13,6 +15,8 @@ function onClickPizza()
         " bacon and pineapple. I highly suggest the pineapple. Once you are finished, for dessert," +
         " you can have the Butter Cake, which goes very well with this pizza.";
         
+        document.getElementById("pizza").appendChild(linebreak);
+
         document.getElementById("pizza").appendChild(img);
 
         togglePizza = true;
@@ -31,19 +35,19 @@ function onClickPasta()
     var img = document.createElement('img');
     img.src = '../assets/garlicCreamFettuccine.jpeg';
 
-    // linebreak = document.createElement("br");
+    linebreak = document.createElement("br");
 
     if (!togglePasta) 
     { 
         
-        // document.getElementById("pasta").appendChild(linebreak);
         
         document.getElementById("pasta").innerHTML = "If you are not completely " +
         "crazy about the pizza, this is the perfect dish for you. This dish is " +
         "a pasta that has fresh Italian parsley, and an option to top it with " +
         "chicken and/or shrimp, and Sauteed Cremini Mushrooms. This dish also " +
         "goes very well with the Butter Cake.";
-        
+        document.getElementById("pasta").appendChild(linebreak);
+        // document.getElementById("dessert").innerHTML += "<br> <br>";
         document.getElementById("pasta").appendChild(img);
 
         togglePasta = true;
