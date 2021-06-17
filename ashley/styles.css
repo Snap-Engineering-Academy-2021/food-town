@@ -49,6 +49,7 @@ hr {
 #how-to-info{
     display: flex;
     margin-top: -550px;
+    gap: 60px;
     justify-content: space-around;
 }
 
@@ -63,5 +64,44 @@ hr {
 
 .how-to-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#info {
+    width: 85%;
+    line-height: 50px;
+    font-size: 26px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+}
+
+#ingredients{
+    margin-left: 40px;
+}
+
+#servings{
+    margin-left: 20px;
+
+}
+
+#input{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#enter-name{
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
