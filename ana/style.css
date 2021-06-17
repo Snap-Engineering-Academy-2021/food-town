@@ -24,11 +24,21 @@ li{
 }
 button{
     background-color: wheat;
-    display: block;
+    display:block;
     margin-left: left;
     margin-right: left;
+    -ms-transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg);
 }
+/*.rotated{
+    -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg);
+  }*/
+
 li.stickyli{
+    font-size: 20px;
     list-style-type: none;
     float:left;
     height: 20px;
@@ -41,27 +51,40 @@ li.stickyli{
     padding-right: 10px;
     padding-bottom: 10px;
 }
-element.style{
+/*element.style{
     display: block;
+}*/
+div#stickynav{
+    width:620px;
+    height: 50px;
+    padding-left: 0px;
+    padding-top: 13px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    float: right;
 }
-/*div#stickylist{
+div#stickylist{
     position:fixed;
     top: 200px;
     width: 100%;
     min-width: 1263px;
     height: 72px;
-    background-image: url("https://www.colorhexa.com/f5deb3.png") repeat;
-    background-position-x: initial;
+    background-image:none;
+    /*background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: initial;
+    background-color: initial;*/
     color: wheat;
     z-index: 9999;
 
-}*/
+}
 /*div#tophead{
     height: 45px;
     width: 419px;
