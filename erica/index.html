@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>California Pizza Kitchen</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,18 +30,31 @@
         particular that are quite tasty.
     </p>
 
-    <div>
+    <div class="buttons">
         <button id= "pizzaButton" onclick= onClickPizza()>The Original BBQ Chicken Pizza</button>
         <button id="pastaButton" onclick=onClickPasta()>Garlic Cream Fettuccine</button>  
     </div>
-
-    <p id="pizza"></p>
-    <p id="pasta"></p>
+    
+    <div class = "center">
+        <p id="pizza"></p>
+        <p id="pasta"></p>
+    </div>
 
     <p class="center">
-        If you decide that the Butter Cake is not for you, I recommend 
+        For dessert, if you decide that the Butter Cake is not for you, I recommend 
         trying the Salted Caramel Pudding. This dessert is the perfect 
         mixture of sweet and salty, which is bound to make anyone smile!
     </p>
+
+    <div class = "buttons">
+        <button id="dessertButton">Dessert</button>
+    </div>
+
+    <div>
+        <p id="dessert"></p>
+    </div>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>

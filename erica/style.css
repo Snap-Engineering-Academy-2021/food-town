@@ -15,12 +15,13 @@ body
     background-color: #FCF4A3;
 }
 
-div button
+.buttons
 {
 
-    background-color: yellow;
-
     /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -29,13 +30,17 @@ div button
 
 #pizzaButton
 {
-    margin-left: 15%; 
+    background-color: yellow;
+    margin-right: 100px;
+    /* margin-left: 15%;  */
 }
 
 #pastaButton
 {
+    background-color: yellow;
+    margin-left: 100px;
     /* display: inline-block; */
-    margin-left: 75%;
+    /* margin-left: 75%; */
     /* margin-top: 0%; */
 }
 
@@ -44,4 +49,9 @@ div button
     text-align: center;
     padding-right: 15%;
     padding-left: 15%;
+}
+
+#dessertButton
+{
+    background-color: #FDCE2A;
 }
