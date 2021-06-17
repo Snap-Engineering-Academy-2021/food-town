@@ -11,22 +11,24 @@ const ingredientsVegies = [
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "Red Pepper"},
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: 'Green Pepper'},
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "Medium White Onion"},
+    { type: 'vegies', amountS: 3, amountM: 6, amountL: 9, name: "cloves of Garlic"},
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "pinch Parsley"},
     { type: 'vegies', amountS: 2, amountM: 4, amountL: 6, name: "cups Bomba Rice"},
 ]
 const ingredientsLandMeats = [
-    { type: 'meats', amountS: 1, amountM: 2, amountL: 3, name: "lbs Chicken"},
+    { type: 'meats', amountS: 1, amountM: 2, amountL: 3, name: "lbs Chicken Thighs"},
     { type: 'meats', amountS: 1, amountM: 2, amountL: 3, name: "Spanish Chorizo"},
 ]
 const ingredientsSeaMeats = [
-    { type: 'meats-sea', amountS: 6, amountM: 10, amountL: 14, name: "Muscles"},
+    { type: 'meats-sea', amountS: 6, amountM: 10, amountL: 14, name: "Mussels"},
     { type: 'meats-sea', amountS: 6, amountM: 10, amountL: 14, name: "Prawns"},
     { type: 'meats-sea', amountS: 6, amountM: 10, amountL: 14, name: "clams"},
 ]
 const ingredientsSeasonings = [
-    { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "Pinch Salt"},
-    { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "Pinch Pepper"},
-    { type: 'seasoning', amountS: 1, amountM: 2, amountL: 3, name: "Pinch Saffron"},
+    { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "pinch Salt"},
+    { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "pinch Pepper"},
+    { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "tsp Spanish Paprika"},
+    { type: 'seasoning', amountS: 1, amountM: 2, amountL: 3, name: "pinch Saffron"},
     { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "tbs Olive Oil"},
     { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "oz Chicken Stock"},
 ]
