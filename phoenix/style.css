@@ -38,3 +38,37 @@ ul{
   left: 80px;
   top: 50px;
 }
+
+button{
+  margin-left: 5%;
+  padding: 15px 32px;
+  margin-bottom: 3%;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  text-decoration: none;
+}
