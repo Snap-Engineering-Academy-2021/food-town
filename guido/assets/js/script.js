@@ -11,8 +11,8 @@ const ingredientsVegies = [
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "Red Pepper"},
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: 'Green Pepper'},
     { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "Medium White Onion"},
-    { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "Pinch Parsley"},
-    { type: 'vegies', amountS: 2, amountM: 4, amountL: 6, name: "lbs Bomba Rice"},
+    { type: 'vegies', amountS: 1, amountM: 2, amountL: 3, name: "pinch Parsley"},
+    { type: 'vegies', amountS: 2, amountM: 4, amountL: 6, name: "cups Bomba Rice"},
 ]
 const ingredientsLandMeats = [
     { type: 'meats', amountS: 1, amountM: 2, amountL: 3, name: "lbs Chicken"},
@@ -30,15 +30,8 @@ const ingredientsSeasonings = [
     { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "tbs Olive Oil"},
     { type: 'seasoning', amountS: 2, amountM: 4, amountL: 6, name: "oz Chicken Stock"},
 ]
-let size = 'S'
 
-inputButtons.forEach((inputButton) => {
-    inputButton.addEventListener('click', () => {
-        size = inputButton.value;
-        resetIngredientsDisplay();
-        displayIngredients();
-    })
-})
+let size = 'S'
 
 const displayIngredients = function () {
     for (let i = 0; i < ingredientsVegies.length; ++i) {
@@ -89,4 +82,12 @@ const resetIngredientsDisplay = function () {
     displaySeasonings.innerHTML = '';
 }
 
+displayIngredients();
 
+inputButtons.forEach((inputButton) => {
+    inputButton.addEventListener('click', () => {
+        size = inputButton.value;
+        resetIngredientsDisplay();
+        displayIngredients();
+    })
+})

@@ -67,6 +67,7 @@ body {
 .size-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
     padding: 10px;
 }
@@ -80,6 +81,14 @@ button {
     border-color: red;
     cursor: pointer;
     background: yellow;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#go-back-button {
+    min-height: 20px;
+    background: #9b2327;
+    border-color: #9b2327;
+    color: rgb(189, 186, 186);
 }
 
 .container {
@@ -89,25 +98,38 @@ button {
     grid-gap: 3px;
     min-height: 450px;
     padding: 30px;
+    margin-bottom: 30px;
     /*border: solid;  /*remove*/
 }
 
 .heading {
     color: orange;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .heading-secondary {
     color: red;
     text-align: left;
+    font-size: 30px;
 }
 
-.ingredients-display {
+.ingredients-display, .description, .displayInstructions{
     font-weight: 700;
     font-size: 20px;
+}
+
+.description {
+    text-align: center;
+}
+
+.displayInstructions {
+    margin-bottom: 100px;
 }
 
 .images {
     width: 150px;
     height: 150px;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
