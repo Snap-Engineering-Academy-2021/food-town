@@ -1,0 +1,32 @@
+#header{
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+body{
+  background: rgb(244,199,242);
+  background: linear-gradient(322deg, rgba(244,199,242,1) 0%, rgba(193,143,252,1) 25%, rgba(63,195,222,1) 100%);
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+ul{
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#nachos{
+  display: flex;
+  justify-content: space-evenly;
+}
+#nachos2{
+  float: right;
+  left: 80px;
+  top: 50px;
+}
