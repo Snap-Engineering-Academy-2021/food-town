@@ -1,45 +1,58 @@
-// var surname = prompt('Greetings friend, what is your name?');
-var toggle = true;
 
-function onClick() {
-    if (toggle) {
-        document.getElementById("greeting").innerHTML = "Hello there, it's " + Date();
-        toggle = false;
-    } else {
-        document.getElementById("greeting").innerHTML = "";
-        toggle = true;
+    var bobaleft;
+    var bobatop;
+    
+    var x=document.getElementById ('content');
+    // puts the 500 bobas in the random position of the screen only with the top and left px
+    function strop (bobaleft,bobatop,bobanum)
+    {
+        if (x==null) 
+            x="<div class='punct' id='"+bobanum+"' style='top:"+bobatop+"px;left:"+bobaleft+"px'></div>";
+        else 
+             x=x+"<div class='punct' id='"+bobanum+"' style='top:"+bobatop+"px;left:"+bobaleft+"px'></div>";
+    
+        document.getElementById ('content').innerHTML=x;
     }
-};
-
-function generateWord(){
-    var randomPercent = Math.floor(Math.random() * (100)); 
-    var test = document.createElement('h1');
-    test.innerText = "W E L C O M E";
-    test.id = 'test';
-    test.style.position = 'absolute';
-    test.style.left = randomPercent + '%';
-    test.style.top = randomPercent + '%';
-    document.getElementById("main").appendChild(test);
-
-}
-
-function generateAllWords(){
-    var words = ["ashwin", "pavan", "jenny", "danny", "kevin", "phoenix", "samara", "venus", "erica", "jonathan", "samantha", "ana", "jenna", "guido", "luis", "JT", "newsha", "ashley"];
-    for (let i = 0; i < words.length; i++) {
-        var randomLeft = Math.floor(Math.random() * (80)) + 5; 
-        var randomTop = Math.floor(Math.random() * (80)) + 10; 
-        var randomRotate = Math.floor(Math.random() *10); 
-
-        var word = document.createElement('a');
-        word.innerText = words[i];
-        word.id = 'word_' + words[i];
-        word.href = '';
-        word.target = '_blank';
-        word.style.position = 'absolute';
-        word.style.left = randomLeft + '%';
-        word.style.top = randomTop + '%';
-        word.style.transform = 'rotate('+randomRotate + 'deg)';
-        document.getElementById("soup").appendChild(word);
+    
+    // generates the random positions for the bobas
+    function randomFromInterval(from,to)
+    {
+        return Math.floor(Math.random()*(to-from+1)+from);
     }
-
-}
+    
+    var bobanum=500; // number of bobas
+    var speed = 2;
+    var toggle= true;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    function start ()
+    {
+        if (bobanum!=0){
+            var a; //left
+            var b; //top
+            
+            a=randomFromInterval (20,width);
+            b=randomFromInterval (10,height);
+            // strop puts the bobas in the random positions
+            strop(a,b,bobanum);
+            bobanum--;
+        }
+    
+        // Move existing Bobas
+        for (var i=1; i<=500; i++)
+        {
+            var el = document.getElementById(i.toString());
+            if (el !== null)
+            {
+                // changes the bobas top position to the bottom
+                var tp = parseInt(el.style.top) + speed + i*.0125;
+                if (tp > height) 
+                    tp -= height;
+                    // incrementing the top px
+                el.style.top = tp + "px";
+            }
+        }
+    
+        setTimeout (function () {start ()},10);
+    }
+    
