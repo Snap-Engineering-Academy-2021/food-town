@@ -1,0 +1,52 @@
+header{
+    background-color: #FDCE2A;
+    font-size: 36px;
+    width: 600px;
+    border: 15px solid yellow;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    content: yellow;
+}
+body
+{
+    background-color: #FCF4A3;
+}
+
+.buttons
+{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#pizzaButton
+{
+    background-color: yellow;
+    margin-right: 100px;
+}
+
+#pastaButton
+{
+    background-color: yellow;
+    margin-left: 100px;
+}
+
+.center
+{
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#dessertButton
+{
+    background-color: #FEE227;
+}
+
+#home
+{
+    background-color: #F9C802;
+}
