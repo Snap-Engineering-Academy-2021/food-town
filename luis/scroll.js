@@ -54,49 +54,35 @@ function removeChild(parent) {
 
 function prev() {
 
+    contentNum--;
+    //in the very beginning change contentNum if out of bounds
+    if (contentNum === 0) 
+        contentNum = 4;
+
     let title = text[contentNum].title;
     let lines = text[contentNum].paragraph;
     let parent = document.getElementById('c1');
     
     removeChild(parent);
-    
 
-    if (contentNum === 0) {
-        contentNum = 4;
+    let td = document.createElement('h2');
+    td.innerHTML = title;
+    document.getElementById('c1').appendChild(td);
 
-        title = text[contentNum].title;
-        lines = text[contentNum].paragraph;
-
-        let td = document.createElement('h2');
-        td.innerHTML = title;
-        document.getElementById('c1').appendChild(td);
-
-        lines.forEach(element => {
-            console.log(element);
-            let description = document.createElement('p');
-            description.innerHTML = element;
-            document.getElementById('c1').appendChild(description);
-        });
-    } else {
-
-        let td = document.createElement('h2');
-        td.innerHTML = title;
-        document.getElementById('c1').appendChild(td);
-
-        lines.forEach(element => {
-            console.log(element);
-            let description = document.createElement('p');
-            description.innerHTML = element;
-            document.getElementById('c1').appendChild(description);
-        });
-    }
-
-    contentNum--;
+    lines.forEach(element => {
+        console.log(element);
+        let description = document.createElement('p');
+        description.innerHTML = element;
+        document.getElementById('c1').appendChild(description);
+    });
 }
 
 function next() {
 
+    contentNum++;
     //in the very beginning change contentNum if out of bounds
+    if (contentNum === 5) 
+        contentNum = 1;
 
     let title = text[contentNum].title;
     let lines = text[contentNum].paragraph;
@@ -104,37 +90,16 @@ function next() {
     
     removeChild(parent);
 
-    if (contentNum === 5) {
-        contentNum = 1;
+    let td = document.createElement('h2');
+    td.innerHTML = title;
+    document.getElementById('c1').appendChild(td);
 
-        title = text[contentNum].title;
-        lines = text[contentNum].paragraph;
-
-        let td = document.createElement('h2');
-        td.innerHTML = title;
-        document.getElementById('c1').appendChild(td);
-
-        lines.forEach(element => {
-            console.log(element);
-            let description = document.createElement('p');
-            description.innerHTML = element;
-            document.getElementById('c1').appendChild(description);
-        });
-    } else {
-
-        let td = document.createElement('h2');
-        td.innerHTML = title;
-        document.getElementById('c1').appendChild(td);
-
-        lines.forEach(element => {
-            console.log(element);
-            let description = document.createElement('p');
-            description.innerHTML = element;
-            document.getElementById('c1').appendChild(description);
-        });
-    }
-
-    contentNum++;
+    lines.forEach(element => {
+        console.log(element);
+        let description = document.createElement('p');
+        description.innerHTML = element;
+        document.getElementById('c1').appendChild(description);
+    });
     
     // text[2].paragraph.forEach(element => {
     //    console.log(element); 
