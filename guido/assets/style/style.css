@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #777;
+    color: rgb(67, 65, 65);
     padding: 15px;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .text-heading {
     -webkit-text-fill-color: red; 
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     text-transform: uppercase;
 }
@@ -82,15 +82,32 @@ button {
     background: yellow;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 50% 25%;
+    grid-gap: 3px;
+    min-height: 450px;
+    padding: 30px;
+    /*border: solid;  /*remove*/
+}
+
 .heading {
     color: orange;
     font-weight: 700;
 }
 
-.ingredient-display {
-    color: blue;
+.heading-secondary {
+    color: red;
+    text-align: left;
 }
 
-.ingredient-amount {
-    color: red;
+.ingredients-display {
+    font-weight: 700;
+    font-size: 20px;
 }
+
+.images {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
