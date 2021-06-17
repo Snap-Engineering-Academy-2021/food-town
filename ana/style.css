@@ -8,7 +8,7 @@ h1 {
     font-size: 50px;
 }
 h2 {
-    color:black;
+    color:slategray;
     text-align: left;
     font-size: 40px;
 }
@@ -18,7 +18,7 @@ h3 {
     font-size: 35px;
 }
 li{
-    color:black;
+    color:slategray;
     text-align: left;
     font-size: 25px;
 }
@@ -35,9 +35,52 @@ li.stickyli{
     width: 100px;
     text-align: center;
     border-left: 1px dotted;
-    border-color: black;
+    border-color: slategray;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+element.style{
+    display: block;
+}
+/*div#stickylist{
+    position:fixed;
+    top: 200px;
+    width: 100%;
+    min-width: 1263px;
+    height: 72px;
+    background-image: url("https://www.colorhexa.com/f5deb3.png") repeat;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    color: wheat;
+    z-index: 9999;
+
+}*/
+/*div#tophead{
+    height: 45px;
+    width: 419px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin: 0px 30px 0px 0px;
+    float: left;
+}*/
+/**{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}*/
+i {
+    color:olive;
+    text-align: left;
+    font-size: 15px;
 }
