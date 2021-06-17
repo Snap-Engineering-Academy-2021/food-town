@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgb(67, 65, 65);
+  padding: 15px;
+}
+
+.text-heading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  height: 40vh;
+  background-image: url("../images/paella-background.jpg");
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.text-heading {
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+}
+
+.primary-heading-main {
+  display: block;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.size-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: solid;
+  border-radius: 10px;
+  border-color: red;
+  cursor: pointer;
+  background: yellow;
+  box-shadow: 10px 10px 10px grey;
+}
+
+#go-back-button {
+  min-height: 20px;
+  background: #9b2327;
+  border-color: #9b2327;
+  color: rgb(189, 186, 186);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 15% 58% 25%;
+  grid-gap: 3px;
+  min-height: 450px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.heading {
+  color: orange;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.heading-secondary {
+  color: red;
+  text-align: left;
+  font-size: 30px;
+}
+
+.ingredients-display,
+.description,
+.displayInstructions {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.description {
+  text-align: center;
+}
+
+.displayInstructions {
+  margin-bottom: 50px;
+}
+
+.images {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.final-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+}
