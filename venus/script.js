@@ -9,3 +9,11 @@ function openNutritionFact() {
         toggle = true;
     }
 };
+
+function ozToMl(valNum) {
+    document.getElementById("outputMilliliters").innerHTML=valNum*29.57;
+};
+
+function cupsToMl(valNum) {
+    document.getElementById("outputMl").innerHTML=valNum*236.59;
+};

@@ -18,7 +18,7 @@
 
             <h1>Panna Cotta with Fresh Strawberry Sauce</h1>
 
-            <div id="img">
+            <div id="pannaCottaImg">
                 <img src="assets/strawberry-panna-cotta.jpeg" alt="image">
             </div>
 
@@ -41,12 +41,27 @@
                     <p class="padding-left">Combine the cream and 1/4 cup sugar in a saucepan over medium heat. Stir in the gelatin mixture; cook and stir until gelatin dissolves completely, about 3 minutes. Add the vanilla extract. Pour the mixture evenly into ramekins; cover and chill at least 4 hours.</p>
                     <strong><i class="fas fa-star"></i>Step 3</strong>
                     <p class="padding-left">To make the strawberry sauce, combine the strawberries, 2 teaspoon vanilla extract, 1/4 cup sugar, and water in a saucepan over medium heat. While the mixture cooks, crush the strawberries with a potato masher. Simmer the sauce until the sugar has dissolved and the sauce has thickened, about 10 minutes; cool.</p>
-                    <strong><i class="fas fa-star"></i>Step 2</strong>
+                    <strong><i class="fas fa-star"></i>Step 4</strong>
                     <p class="padding-left">Remove chilled ramekins from the refrigerator shortly before serving. Dip the bottoms of the cups in warm water to help loosen the custard. Run a thin-bladed knife around the inner edge of each ramekin to loosen the dessert; turn onto a dessert plate to unmold. Spoon strawberry sauce over panna cotta to serve.</p>
                 </div>
 
             <button onClick=openNutritionFact()>Nutrition Facts</button>
             <h4 id="nutrition-facts"></h4>
+
+
+            <h2>Converter</h2>
+            <div class="margin-top-bottom">
+                <label>Ounces</label>
+                <input type="number" placeholder="Ounces" oninput="ozToMl(this.value)" onchange="ozToMl(this.value)">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Milliliters: <span id="outputMilliliters"></span> ml</span>
+            </div>
+            <div class="margin-top-bottom">
+                <label>Cups</label>
+                <input type="number" placeholder="Cups" oninput="cupsToMl(this.value)" onchange="cupsToMl(this.value)">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Milliliters: <span id="outputMl"></span> ml</span>
+            </div>
 
         </div>
 
