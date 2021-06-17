@@ -36,7 +36,7 @@ function resizeBowl(){
 
 //generateAllWords() is a function that takes all of our names and creates a link!
 function generateAllWords(){
-    var words = ["ashwin", "jenny", "danny", "kevin", "phoenix", "samara", "venus", "erica", "jonathan", "samantha", "ana", "jenna", "guido", "luis", "JT", "newsha", "ashley"];
+    var words = ["ashwin", "jenny", "danny", "kevin", "phoenix", "samara", "venus", "erica", "jonathan", "samantha", "jaytee", "jenna", "guido", "luis", "ana", "newsha", "ashley"];
     for (let i = 0; i < words.length; i++) {
         //generate some random percentages and degrees
         var randomLeft = Math.floor(Math.random() * (4)) + 35; 
