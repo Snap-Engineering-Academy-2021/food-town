@@ -5,12 +5,12 @@
   font-family: 'Courier New', monospace;
 }
 body{
-  background: rgb(244,199,242);
-  background: linear-gradient(322deg, rgba(244,199,242,1) 0%, rgba(193,143,252,1) 25%, rgba(63,195,222,1) 100%);
+  background: rgb(255,231,0);
+  background: linear-gradient(135deg, rgba(255,231,0,.8) 0%, rgba(255,179,0,.85) 39%, rgba(247,131,22,.85) 78%, rgba(255,59,0,.75) 100%);
 }
+
 p{
   font-size: 20px;
-  font-weight: bold;
   font-family: 'Courier New', monospace;
   margin-left: 5%;
   margin-right: 5%;
@@ -21,12 +21,54 @@ ul{
   margin-left: 5%;
   margin-right: 5%;
 }
+.topics p{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 #nachos{
   display: flex;
   justify-content: space-evenly;
 }
 #nachos2{
   float: right;
+  padding-right: 5%;
   left: 80px;
   top: 50px;
+}
+
+button{
+  margin-left: 5%;
+  padding: 15px 32px;
+  margin-bottom: 3%;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  text-decoration: none;
 }

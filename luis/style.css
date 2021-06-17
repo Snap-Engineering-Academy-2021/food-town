@@ -1,0 +1,67 @@
+body {
+    background-image: url(./images/blackWallpaper.jpg);
+    /* margin: 10 auto; */
+    /* overflow: hidden; */
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 0;
+}
+
+h1, h2, p, li {
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+p, li{
+    font-size: 21px;
+}
+
+li {
+    /* padding: 10px 0;; */
+}
+
+img {
+    width: 100%;
+}
+
+#c0 {
+    width: 45%;
+}
+
+#c1 {
+    flex-grow: 1;
+    max-width: 50%;
+    padding-left: 40px;
+}
+
+.content {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    
+}
+
+.chilaquiles {
+    display: flex;
+    justify-content: left;
+    /* width: 45%; */
+}
+
+#c2, #c3, #c4 {
+    visibility: hidden;
+}
+
+span {
+    color: white;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 0 50px;
+
+}
