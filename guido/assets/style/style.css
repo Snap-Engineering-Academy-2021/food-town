@@ -93,7 +93,7 @@ button {
 .container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 15% 55% 25%;
+  grid-template-rows: 15% 58% 25%;
   grid-gap: 3px;
   min-height: 450px;
   padding: 30px;

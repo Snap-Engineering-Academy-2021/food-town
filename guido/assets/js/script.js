@@ -8,32 +8,28 @@ const displaySeasonings = document.getElementById("displaySeasoning");
 const displayInstructions = document.querySelector(".displayInstructions");
 
 const ingredientsVegies = [
-  { type: "vegies", amountS: 1, amountM: 2, amountL: 3, name: "Red Pepper" },
-  { type: "vegies", amountS: 1, amountM: 2, amountL: 3, name: "Green Pepper" },
+  { amountS: 1, amountM: 2, amountL: 3, name: "Red Pepper" },
+  { amountS: 1, amountM: 2, amountL: 3, name: "Green Pepper" },
   {
-    type: "vegies",
     amountS: 1,
     amountM: 2,
     amountL: 3,
     name: "Medium White Onion",
   },
   {
-    type: "vegies",
-    amountS: '1/2',
+    amountS: "1/2",
     amountM: 1,
-    amountL: '1 1/2',
+    amountL: "1 1/2",
     name: "cups Frozen Peas",
   },
   {
-    type: "vegies",
     amountS: 3,
     amountM: 6,
     amountL: 9,
     name: "cloves of Garlic",
   },
-  { type: "vegies", amountS: 1, amountM: 2, amountL: 3, name: "pinch Parsley" },
+  { amountS: 1, amountM: 2, amountL: 3, name: "pinch Parsley" },
   {
-    type: "vegies",
     amountS: 2,
     amountM: 4,
     amountL: 6,
@@ -42,14 +38,12 @@ const ingredientsVegies = [
 ];
 const ingredientsLandMeats = [
   {
-    type: "meats",
     amountS: 1,
     amountM: 2,
     amountL: 3,
     name: "lbs Chicken Thighs",
   },
   {
-    type: "meats",
     amountS: 1,
     amountM: 2,
     amountL: 3,
@@ -57,42 +51,37 @@ const ingredientsLandMeats = [
   },
 ];
 const ingredientsSeaMeats = [
-  { type: "meats-sea", amountS: 6, amountM: 10, amountL: 14, name: "Mussels" },
-  { type: "meats-sea", amountS: 6, amountM: 10, amountL: 14, name: "Prawns" },
-  { type: "meats-sea", amountS: 6, amountM: 10, amountL: 14, name: "clams" },
+  { amountS: 6, amountM: 10, amountL: 14, name: "Mussels" },
+  { amountS: 6, amountM: 10, amountL: 14, name: "Prawns" },
+  { amountS: 6, amountM: 10, amountL: 14, name: "clams" },
 ];
 const ingredientsSeasonings = [
-  { type: "seasoning", amountS: 2, amountM: 4, amountL: 6, name: "pinch Salt" },
+  { amountS: 2, amountM: 4, amountL: 6, name: "pinch Salt" },
   {
-    type: "seasoning",
     amountS: 2,
     amountM: 4,
     amountL: 6,
     name: "pinch Pepper",
   },
   {
-    type: "seasoning",
     amountS: 2,
     amountM: 4,
     amountL: 6,
     name: "tsp Spanish Paprika",
   },
   {
-    type: "seasoning",
     amountS: 1,
     amountM: 2,
     amountL: 3,
     name: "pinch Saffron",
   },
   {
-    type: "seasoning",
     amountS: 2,
     amountM: 4,
     amountL: 6,
     name: "tbs Olive Oil",
   },
   {
-    type: "seasoning",
     amountS: 2,
     amountM: 4,
     amountL: 6,
