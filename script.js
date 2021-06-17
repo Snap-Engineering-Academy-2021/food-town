@@ -46,7 +46,7 @@ function generateAllWords(){
         var word = document.createElement('a');
         word.innerText = words[i];
         word.id = 'word_' + words[i];
-        word.href = '../' + words[i] + '/index.html';
+        word.href = '../food-town/' + words[i] + '/index.html';
 
         //update the styles for that element
         word.style.position = 'absolute';
