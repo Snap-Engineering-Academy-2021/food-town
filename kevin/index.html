@@ -1,35 +1,84 @@
 <!doctype html>
 
 <style>
-.name_of_dish{
-	font-size: 40px;
+.name_of_dish {
+	font-size: 25px;
+	position: relative;
+	padding: 15% 0 10%;
 	text-align: center;
 	font-family: sans-serif;
+	color: white;
+}
+.Paralax {
+	background-image: url("src/Bajai-Halaszle-3939.jpeg");
+	background-size: auto;
+	width: 100%;
+}
+.description_and_story_of_meal {
+	position: center;
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+}
+.ingredients_and_steps {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	font-size: 20px;
+}
+.story_description_content {
+	font-size: 20px;
 }
 </style>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Kevin's Fav Dish</title>
-		<img>src="src/Bajai-Halaszle-3939.jpeg"</img>
-		<div class="name_of_dish">
-			<p>Halaszle(Fisher((wo)man)'s Soup)</p>
+		<div class="Paralax">
+			<div class="name_of_dish">
+				<h1>Halaszle(Fisher((wo)man)'s Soup)</h1>
+			</div>
 		</div>
 		<meta name="description" content="The HTML5 Herald">
 		<meta name="author" content="SitePoint">
-
 		<link rel="stylesheet" href="css/styles.css?v=1.0">
-
 	</head>
-
 	<body>
-	<div class="description_of_meal">
-		<p>This dish is a traditional Hungarian soup. An important ingredient is the broth. It's ingredients are Fish (carp or mixed river fish), paprika, vegetables (red onions, green peppers, tomatoes), and if you're by the Danube(a river) noodles Depending on which river you're by the ingredients vary.</p>
-	</div>
-	<div class="story_of_meal">
-		<p> A fun memory I have of this dish is from when I was a child. My grandma's boyfriend had a cabin by the Danube river, in a fishing town called Baja. The main attraction/event was to take our wooden motorboat to this island where our neighbors would be waiting for us with their boats docked on the sandy river beach. On this island we'd bathe when it got hot but most importantly we would fish! Everyone from our street would cast their lines sit and just tell jokes, or stories of them growing up on the river. It was tradition, that when a Ponty(Carp) was caught it meant that we will be having Fisherman's Soup. So everyone on our street would pitch in with their catch the next day and we would start making the soup. It's cooked in a giant cauldron over a fire. It's a whole day process. Once it's finished we'd have a giant feast at our cabin overlooking the Danube. 
-		</p>
-	</div>
-		<script src="js/scripts.js"></script>
+	<div class="title">	
+		<div class="description_and_story_of_meal">
+			<br>
+			<div class="story_description_content">
+				<p>This dish is a traditional Hungarian soup. An important ingredient is the broth. It's ingredients are Fish (carp or mixed river fish), paprika, vegetables (red onions, green peppers, tomatoes), and if you're by the Danube(a river) noodles Depending on which river you're by the ingredients vary.</p>
+				<img class="fishing_photo"src="src/methefishaman.jpeg" width=100% height=400>
+				<p> A fun memory I have of this dish is from when I was a child. My grandma's boyfriend had a cabin by the Danube river, in a fishing town called Baja. The main attraction/event was to take our wooden motorboat to this island where our neighbors would be waiting for us with their boats docked on the sandy river beach. On this island we'd bathe when it got hot but most importantly we would fish! Everyone from our street would cast their lines sit and just tell jokes, or stories of them growing up on the river. It was tradition, that when a Ponty(Carp) was caught it meant that we will be having Fisherman's Soup. So everyone on our street would pitch in with their catch the next day and we would start making the soup. It's cooked in a giant cauldron over a fire. It's a whole day process. Once it's finished we'd have a giant feast at our cabin overlooking the Danube. 
+				</p>
+			<img src="src/danube.jpeg" width=100% height=400>
+			</div>
+		</div>
+		<div class="ingredients_and_steps">
+			<br>
+			<div class="ingredients">
+				<strong style="text-decoration: underline;"=>Ingredients</strong>
+				<li>1 kg (~2 1/4 lbs) fresh-water fish, sliced</li>
+				<li>3-3,5 l (~12-15 cups) water</li>
+				<li>2 medium onions, finely chopped</li>
+				<li>1 – 1 1/2 tbsp salt</li>
+				<li>2 tbsp sweet ground paprika</li>
+				<li>1/4 tbsp hot ground paprika</li>
+				<li>1 green pepper</li>
+				<li>1 medium tomato</li>
+				<li>100 g (~3/4 cup) tarhonya (egg barley)</li>
+				<strong style="text-decoration: underline; font-size: 20px;"=>Steps</strong>
+				<ol style="font-size: 20px;">
+				<li>Place the fish slices and water in a bogrács or pot.</li>
+				<li>Add finely chopped onion and bring it to a boil. </li>
+				<li>When the liquid boils, add paprika (fat of the fish releases by that time and paprika can dissolve in it), salt, whole green pepper and whole tomato. </li>
+				<li>Over low heat simmer slowly for 2 hours; shake the bogrács or pot from time to time, do not stir the soup in order to avoid damaging the fish slices. </li>
+				<li>Add egg barley 20 minutes before the two-hour cooking time comes to an end, and keep simmering until the noodles are tender. </li>
+				<li>Serve hot, with white bread and hot green pepper slices.</li>
+				<img src="src/leves.jpeg" width=100% height=400>
+			</div>			
+		</div>
 	</body>
 </html>
