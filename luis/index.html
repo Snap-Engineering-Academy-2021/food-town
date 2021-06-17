@@ -6,36 +6,70 @@
 <link rel="stylesheet" href="./style.css">
 <style>
 </style>
-<script src="./scroll.js">
+<script src="./scroll.js"></script>
 
-</script>
 <body>
 
-<div class="">
- <h1>Chilaquiles Dish Recipe</h1>
- <div class="chilaquiles">
-    <h1>jisdojdfsoijhfsd</h1>
-    <img src="./images/basic-chilaquiles-recipe-2342627-hero-01-f0305b8eb0f7465f9a6de5fa7ae474e6.jpeg">
-    <p>hdjshdfs</p>
+<div class="wrapper">
+   <div class="content">
+      <div class="item" id="c0">
+         <img src="./images/Chilaquiles_Verdes_8-1536x2048.jpeg">
+       </div>
+       <!-- <button onclick=quickMessage()>click me!</button> -->
+      
+       <div class="item" id="c1">
+         <!-- <h1>Chilaquiles Dish Recipe</h1> -->
+       </div>
+
+       <!-- <div class="item" id="c1">
+         <h2>Overview</h2>
+         <p>Chilaquiles is a traditional Mexican breakfast dish consisting of corn tortillas cut into quarters and lightly fried.</p>
+         <p>Typically, corn tortillas cut into quarters and lightly fried or baked for a lighter version are the basis of the dish. Green or red salsa is poured over the crisp tortilla triangles. 
+         The mixture is simmered until the tortilla starts softening. Pulled chicken is sometimes added to the mix. It is commonly garnished with crema, crumbled queso fresco, sliced onion, 
+         and avocado slices. Chilaquiles can be served with refried beans, eggs (scrambled or fried) and guacamole as side dishes.</p>
+       </div> -->
+       
+   </div>
+   <div class="arrows">
+      <span class="prev" onClick=prev()><</span>
+      <span class="next" onClick=next()>></span>
+   </div>
+
+ <!-- <div class="item" id="c2">
+   <h2>Overview</h2>
+   <p>Chilaquiles is a traditional Mexican breakfast dish consisting of corn tortillas cut into quarters and lightly fried.</p>
+   <p>Typically, corn tortillas cut into quarters and lightly fried or baked for a lighter version are the basis of the dish. Green or red salsa is poured over the crisp tortilla triangles. 
+   The mixture is simmered until the tortilla starts softening. Pulled chicken is sometimes added to the mix. It is commonly garnished with crema, crumbled queso fresco, sliced onion, 
+   and avocado slices. Chilaquiles can be served with refried beans, eggs (scrambled or fried) and guacamole as side dishes.</p>
  </div>
- <button onclick=quickMessage()>click me!</button>
- <h2>Ingredients</h2>
- <ul>
-    <li>1 tablespoon vegetable oil</li>
-    <li>2 - 3 cups of tortilla chips</li>
-    <li>1 1/4 cups of green or red salsa</li>
-    <li>1/2 cup crumbled Cojita cheese</li>
-    <li>2 tablespoons of cream</li>
- </ul>
- <h2>Steps</h2>
- <p>Gather the ingredients.</p>
- <p>Lightly coat a large frying pan with vegetable oil. Heat over medium-high heat until oil shimmers.</p>
- <p>Spread tortilla chips in pan.</p>
- <p>Quickly pour salsa over chips and reduce heat to medium-low. Simmer the chips in sauce, undisturbed, until chips absorb some of the liquid and soften, for approximately 10 minutes.</p>
- <p>Divide chilaquiles between two plates; sprinkle half of the cheese on each and drizzle with half of the crema.</p>  
- <p>end of step instructions</p>
- <p>You should see this smiley face if you merged correctly :)</p>
+
+<div class="content" id="c3">
+   <h2>Ingredients</h2>
+   <ul>
+      <li>1 tablespoon vegetable oil</li>
+      <li>2 - 3 cups of tortilla chips</li>
+      <li>1 1/4 cups of green or red salsa</li>
+      <li>1/2 cup crumbled Cojita cheese</li>
+      <li>2 tablespoons of cream</li>
+   </ul>
+</div> 
+ 
+<div class="content" id="c4">
+   <h2>Steps</h2>
+   <p>1. Gather the ingredients.</p>
+   <p>2. Lightly coat a large frying pan with vegetable oil. Heat over medium-high heat until oil shimmers.</p>
+   <p>3. Spread tortilla chips in pan.</p>
+   <p>4. Quickly pour salsa over chips and reduce heat to medium-low. Simmer the chips in sauce, undisturbed, until chips absorb some of the liquid and soften, for approximately 10 minutes.</p>
+   <p>5. Divide chilaquiles between two plates; sprinkle half of the cheese on each and drizzle with half of the crema.</p> 
+</div> -->
+ 
 </div>
 
 </body>
+<script>
+
+   var description = document.createElement('p')
+   description.innerHTML = "Default text here upon loading";
+   document.getElementById('c1').appendChild(description);   
+</script>
 </html>
