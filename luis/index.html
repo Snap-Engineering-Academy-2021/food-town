@@ -68,8 +68,14 @@
 </body>
 <script>
 
-   var description = document.createElement('p')
-   description.innerHTML = "Default text here upon loading";
+   //default text content upon loading
+   let td = document.createElement('h2');
+   td.innerHTML = "Food Recipe";
+
+   var description = document.createElement('p');
+   description.innerHTML = "Chilaquiles";
+   
+   document.getElementById('c1').appendChild(td);
    document.getElementById('c1').appendChild(description);   
 </script>
 </html>

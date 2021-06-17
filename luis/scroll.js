@@ -61,7 +61,7 @@ function prev() {
     removeChild(parent);
     
 
-    if (contentNum === 1) {
+    if (contentNum === 0) {
         contentNum = 4;
 
         title = text[contentNum].title;
@@ -96,13 +96,15 @@ function prev() {
 
 function next() {
 
+    //in the very beginning change contentNum if out of bounds
+
     let title = text[contentNum].title;
     let lines = text[contentNum].paragraph;
     let parent = document.getElementById('c1');
     
     removeChild(parent);
 
-    if (contentNum === 4) {
+    if (contentNum === 5) {
         contentNum = 1;
 
         title = text[contentNum].title;
