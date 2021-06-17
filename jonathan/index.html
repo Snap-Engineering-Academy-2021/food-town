@@ -9,6 +9,9 @@
   <meta name="author" content="Jonathan Ng">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+
 <script src="script.js"></script>
 </head>
 
@@ -24,10 +27,10 @@
     <div id="food">
       <h2>Must Try Picks!</h2>
       <div id="food-items">
-        <div id="ham-and-cheese">
-          <h3>Ham & Cheese Croissant with Jalapenos</h3>
-          <img src="https://lh3.googleusercontent.com/proxy/D7_q05OkMzCwzgv74UMNiFjlc3bPHaVqEfIocvrpry8OqGNQ2Dk-HlzD-VHGd-iSbwwGFgrGFFwIF9lru1ueCcjLyvu8OYhP39Z3nNM7UP69uuuNrAByF3KrxlqjNWqNj3l6bw_51_QfhHaNXorVCdqFm9F1o2A">
-          <p>The Ham & Cheese Croissant with Jalapenos is an AMAZING peace of work from heaven. The kind workers warm it up for you on the spot, so the cheese is melty and the bread is super duper soft! For an unforgettable experience in your mouth, this is the dish to get when check this place out!</p>
+        <div id="ham-and-cheese-with-jalapeno-1">
+          <h3>Ham & Cheese Croissant with Jalapeno</h3>
+          <img src="http://4.bp.blogspot.com/-PCEr3i_kvlg/VOlYMzgk4dI/AAAAAAAAO5s/kN_mwOzBqiA/s1600/IMG_3624.JPG">
+          <p>The Ham & Cheese Croissant with Jalapeno is an AMAZING peace of work from heaven. The kind workers warm it up for you on the spot, so the cheese is melty and the bread is super duper soft! For an unforgettable experience in your mouth, this is the dish to get when check this place out!</p>
         </div>
         <div id="matcha-thai-tea">
           <h3>Matcha Thai Tea</h3>
@@ -40,22 +43,37 @@
           <p>The Cronut is a classic at Seaside Bakery. Imagine a perfectly glazed donut that's sweet and light. Now imagine a fliffy, buttery croissant. Together, they're an unforgettable combination you're sure to come back for!</p>
         </div>
       </div>
+      <h2>Since their croissants are the <b>absolute best</b>, checkout their other croissants!</h2>
+      <button onclick=openFullMenu()>Open Full Menu</button>
+      <div id="full-menu">
+        <p id="ham-and-cheese"></p>
+        <p id="ham-and-cheese-with-jalapeno-2"></p>
+        <p id="turkey-and-cheese"></p>
+        <p id="cheese"></p>
+        <p id="cheese-with-jalapeno"></p>
+        <p id="plain"></p>
+        <p id="chocolate"></p>
+        <p id="blueberry-cream-cheese"></p>
+        <p id="strawberry-cream-cheese"></p>
+        <p id="cream cheese"></p>
+        <p id="almond"></p>
+      </div>
     </div>
     
     <div id="info">
       <h2>Now that you're drooling...</h2>
       <div id="info-items"> 
         <div id="hours">
-          <img src="https://image.freepik.com/free-vector/open-24-7-neon-style-sign-illustration_189374-91.jpg">
+          <!-- <img src="https://image.freepik.com/free-vector/open-24-7-neon-style-sign-illustration_189374-91.jpg"> -->
           <h3>It's open 24/7!</h3>>
         </div>
         <div id="location">
           <h3>It's in Newport Beach</h3>
           <div id="map"></div>
-          <script
+          <!-- <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI9H9qd8jPW2EUeowf79oZ5iTja3VU0I8&callback=initMap&libraries=&v=weekly"
             async>
-          </script>
+          </script> -->
         </div>
       </div>
     </div>
