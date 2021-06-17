@@ -11,37 +11,27 @@ header{
 }
 body
 {
-    /* background-color: #FEE227; */
     background-color: #FCF4A3;
 }
 
 .buttons
 {
 
-    /* display: inline-block; */
     display: flex;
     justify-content: center;
-    
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* margin-left: 15%; */
+
 }
 
 #pizzaButton
 {
     background-color: yellow;
     margin-right: 100px;
-    /* margin-left: 15%;  */
 }
 
 #pastaButton
 {
     background-color: yellow;
     margin-left: 100px;
-    /* display: inline-block; */
-    /* margin-left: 75%; */
-    /* margin-top: 0%; */
 }
 
 .center

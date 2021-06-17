@@ -47,7 +47,7 @@ function onClickPasta()
         "chicken and/or shrimp, and Sauteed Cremini Mushrooms. This dish also " +
         "goes very well with the Butter Cake.";
         document.getElementById("pasta").appendChild(linebreak);
-        // document.getElementById("dessert").innerHTML += "<br> <br>";
+
         document.getElementById("pasta").appendChild(img);
 
         togglePasta = true;
@@ -69,22 +69,15 @@ function onClickDessert()
 
     linebreak = document.createElement("br");
 
-    // var t = document.createTextNode("Salted Caramel Pudding");
+
 
     if (!toggleDessert) 
     { 
-        // document.getElementById("dessert").appendChild(linebreak);
+
         document.getElementById("dessert").innerHTML+= "Butter Cake";
         document.getElementById("dessert").appendChild(linebreak);
-        // document.getElementById("dessert").style.textAlign = "center";
         document.getElementById("dessert").appendChild(img);
-        // document.getElementById("dessert").appendChild(linebreak);
-        // document.getElementById("dessert").appendChild("Salted Caramel Pudding");
-        // innerHTML.appendChild(t);
-        // document.getElementById("dessert").textContent = "Salted Caramel Pudding";
-        // document.getElementById("dessert").insertBefore("Salted Caramel Pudding");
-        // document.getElementById("dessert").appendChild(linebreak);
-        // document.getElementById("dessert").append(linebreak);
+
         document.getElementById("dessert").innerHTML += "<br> <br>";
         document.getElementById("dessert").innerHTML+= "Salted Caramel Pudding";
         document.getElementById("dessert").appendChild(linebreak);
