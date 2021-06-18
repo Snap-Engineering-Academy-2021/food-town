@@ -53,7 +53,7 @@ const ingredientsLandMeats = [
 const ingredientsSeaMeats = [
   { amountS: 6, amountM: 10, amountL: 14, name: "Mussels" },
   { amountS: 6, amountM: 10, amountL: 14, name: "Prawns" },
-  { amountS: 6, amountM: 10, amountL: 14, name: "clams" },
+  { amountS: 6, amountM: 10, amountL: 14, name: "Clams" },
 ];
 const ingredientsSeasonings = [
   { amountS: 2, amountM: 4, amountL: 6, name: "pinch Salt" },
