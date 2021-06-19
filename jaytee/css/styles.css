@@ -38,5 +38,5 @@ img {
 }
 
 div .instructions {
-    display: flex;
+    border-radius: 8px;
 }
