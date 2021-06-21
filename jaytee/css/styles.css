@@ -1,0 +1,62 @@
+* {
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+a {
+    color: #1b80b7;
+    transition: all .2s linear;
+}
+
+a:hover { 
+    color: #52bff2; 
+}
+
+h1 {
+    color: lightsteelblue;
+}
+
+body {
+    display: flex;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=154134);
+	background: linear-gradient(-45deg, #FBB03B, #2E3192, #D4145A, #1BFFFF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+img {
+    max-width: 700px;
+    max-height: 600px;
+    padding: 20px 30px 50px 20px;
+}
+
+p {
+    color: lightskyblue;
+}
+
+button {
+    background: lime;
+    border-radius: 28px;
+}
+
+.ingredients-list {
+    background-color: rgb(230, 55, 55);
+    padding: 20px 20px;
+    border-radius: 8px;
+    opacity: .9;
+}
+
+.instructions {
+    padding: 50px 50px 50px 70px;
+}
