@@ -1,17 +1,17 @@
 function generateCurryImage() {
-    const curryImages = [ 
+    let curryImages = [ 
         {
             src:"./assets/curry1.png",
             width: "722",
             height: "366"
         },
         {
-            src:"./assets/curry2.png",
+            src:"./assets/curry2.jpeg",
             width: "1200",
             height: "675"
         },
         {
-            src:"./assets/curry3.png",
+            src:"./assets/curry3.jpeg",
             width: "1280",
             height: "720"
         },
@@ -21,7 +21,7 @@ function generateCurryImage() {
             height: "268"
         },
         {
-            src:"./assets/curry5.gif",
+            src:"./assets/curry5.png",
             width: "1280",
             height: "720"
         },
@@ -38,7 +38,7 @@ function generateCurryImage() {
     let arrayLength = curryImages.length;
     let newArray = [];
     for (let i = 0; i < arrayLength; i++) {
-        newArray[i] = newImage;
+        newArray[i] = new Image();
         newArray[i].src = curryImages[i].src;
         newArray[i].width = curryImages[i].width;
         newArray[i].height = curryImages[i].height;
@@ -54,12 +54,12 @@ function generateCurryImage() {
     newImage = getRandomNum(0, newArray.length -1);
 
     //remove previous images    
-    let images = document.getElementsById('curry-img');
+    let images = document.getElementsByTagName('img');
     let l = images.length;
     for ( let p = 0; p < l; p++) {
         images[0].parentNode.removeChild(images[0]);
     }
 
-    // display new random image
+    // add new random image
     document.getElementById('img-container').appendChild(newImage);
 }

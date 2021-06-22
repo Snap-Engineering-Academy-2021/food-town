@@ -84,3 +84,29 @@ width: 55%;
 #steps li {
   margin: 15px 0;
 }
+
+/* curry images */
+
+#img-container {
+  width: 500px;
+  height: 250px;
+  border: solid black 2px;
+  overflow: hidden;
+  margin: 7px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+button {
+  margin-top: 3px;
+  background-color: #012623;
+  color: #CED3F2;
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 1.1em;
+}
+
